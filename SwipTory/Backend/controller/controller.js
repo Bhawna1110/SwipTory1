@@ -1,5 +1,5 @@
 require('dotenv').config();
-const Bcryptjs = require("bcryptjs"); /* For encryption and decryption */
+const Bcryptjs = require("bcryptjs"); 
 const ObjectId = require('mongoose').Types.ObjectId
 const generatedSalt = Bcryptjs.genSaltSync(10);
 const jwt = require('jsonwebtoken');
