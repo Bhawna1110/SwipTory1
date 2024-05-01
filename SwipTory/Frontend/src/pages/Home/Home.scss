@@ -1,0 +1,25 @@
+.home-container {
+  padding: 45px;
+  .category-slider-container {
+    margin-bottom: 66px;
+    text-align: center;
+    span {
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 39.06px;
+      text-align: center;
+      color: #8e8e8e;
+    }
+  }
+ 
+  @media (max-width: 600px) {
+    padding: 18px 14px;
+  }
+}
+
+.slick-track {
+  div {
+    display: flex;
+    justify-content: center;
+  }
+}
