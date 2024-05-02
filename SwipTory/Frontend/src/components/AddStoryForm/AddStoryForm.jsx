@@ -92,7 +92,7 @@ const AddStoryForm = ({
                 <label>Category :</label>
                 <div className="input-inner-wrapper">
                   <select value={categoryValue} onChange={handleCategoryChange}>
-                    <option value="">Category</option>
+                     <option value="" disabled>Select a category</option>
                     {category?.length > 0 ? (
                       <>
                         {category.map((item) => (
@@ -106,11 +106,7 @@ const AddStoryForm = ({
                   <div className="message">
                     This field will be common for all slides
                   </div>
-                  { categoryValue ==="" && (
-                    <div className="error">
-                      Category required
-                    </div>
-                  )}
+                  
                 </div>
               </div>
             </div>
