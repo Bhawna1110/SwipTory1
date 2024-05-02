@@ -79,7 +79,7 @@ const LoginModal = ({ isOpen, onClose, children, disableScroll }) => {
               className="modal-close-button"
             />
           </div>
-          <div className="title">Login to Swip Tory</div>
+          <div className="title">Login to SwipTory</div>
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="form-control">
               <div className="input-wrappper">
