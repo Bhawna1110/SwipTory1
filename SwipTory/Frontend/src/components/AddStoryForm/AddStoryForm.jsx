@@ -90,11 +90,9 @@ const AddStoryForm = ({
             <div className="form-control">
               <div className="input-wrappper">
                 <label>Category :</label>
-                <input  placeholder="Enter a category"
-                  />
                 <div className="input-inner-wrapper">
                   <select value={categoryValue} onChange={handleCategoryChange}>
-                    <option value=""> </option>
+                    <option value="" disabled selected>Select a category</option>
                     {category?.length > 0 ? (
                       <>
                         {category.map((item) => (
