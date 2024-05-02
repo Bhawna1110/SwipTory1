@@ -172,7 +172,7 @@ const UpdateStoryModal = ({
           <div className="form-wrapper">
             <div className="slide-wrapper">
               {/* <div> */}
-            {fields.map((slide, index) => (
+{fields.map((slide, index) => (
   <>
     <span
       className={`${currentSlide === index ? "active" : ""}`}
@@ -181,7 +181,7 @@ const UpdateStoryModal = ({
       <span onClick={() => goToSlide(index)}>
         Slide {index + 1}
       </span>
-      {index >= 3 && (
+      {(index >= 3 && index === currentSlide) && (
         <IoMdCloseCircleOutline
           size={20}
           className="remove-slide"
@@ -191,6 +191,7 @@ const UpdateStoryModal = ({
     </span> 
   </>
 ))}
+
 
 
               {fields.length < 6 ? (
