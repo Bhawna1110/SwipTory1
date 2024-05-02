@@ -172,25 +172,27 @@ const UpdateStoryModal = ({
           <div className="form-wrapper">
             <div className="slide-wrapper">
               {/* <div> */}
-{fields.map((slide, index) => (
-  <>
-    <span
-      className={`${currentSlide === index ? "active" : ""}`}
-      key={slide.id}
-    >
-      <span onClick={() => goToSlide(index)}>
-        Slide {index + 1}
-      </span>
-      {(index >= 3 && index === currentSlide) && (
-        <IoMdCloseCircleOutline
-          size={20}
-          className="remove-slide"
-          onClick={() => removeSlide(index)}
-        />
-      )}
-    </span> 
-  </>
-))}
+ {fields.map((slide, index) => (
+                <>
+                  <span
+                    className={`${currentSlide === index ? "active" : ""}`}
+                    key={slide.id}
+                  >
+              <span onClick={() => goToSlide(index)}>
+                      Slide {index + 1}
+                    </span>
+                    {fields.length > 3 && (
+                      <IoMdCloseCircleOutline
+                        size={20}
+                        className="remove-slide"
+                        onClick={() => removeSlide(index)}
+                      />
+                    )}
+                  </span> 
+
+                </>
+              ))}
+
 
 
 
